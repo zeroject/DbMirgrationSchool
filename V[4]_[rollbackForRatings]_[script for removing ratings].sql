@@ -1,0 +1,6 @@
+BEGIN TRANSACTION
+use SchoolMigration
+GO
+
+DROP TABLE ProductRatings
+COMMIT TRANSACTION

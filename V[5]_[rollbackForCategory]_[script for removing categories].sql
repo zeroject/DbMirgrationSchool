@@ -1,0 +1,12 @@
+BEGIN TRANSACTION
+USE SchoolMigration
+GO
+
+ALTER TABLE Products
+DROP CONSTRAINT FK_categoryId_category;
+
+ALTER TABLE Products
+DROP COLUMN categoryId;
+
+DROP TABLE Category;
+COMMIT TRANSACTION
