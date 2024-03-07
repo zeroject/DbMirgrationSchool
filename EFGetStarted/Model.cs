@@ -1,4 +1,5 @@
-﻿using EFGetStarted.Models;
+﻿using EFGetStarted;
+using EFGetStarted.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,8 @@ public class MigrationContext : DbContext
 
     public DbSet<Category> Categories { get; set; }
 
+    public DbSet<ProductRating> ProductRatings { get; set; }
+
     public MigrationContext()
     {
 
@@ -17,7 +20,7 @@ public class MigrationContext : DbContext
     // The following configures EF to create a Sqlite database file in the
     // special "local" folder for your platform.
     protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlServer("Server=localhost;Database=migrationDb;User Id=sa;Password=SuperSecret7!;Trusted_Connection=False;TrustServerCertificate=True;");
+        => options.UseSqlServer("Server=localhost;Database=migrationDb;User Id=sa;Password=SuperSecret69!;Trusted_Connection=False;TrustServerCertificate=True;");
 }
 
 
