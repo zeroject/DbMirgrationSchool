@@ -24,16 +24,10 @@ first get a list of all current migrations
 dotnet ef migrations list
 ```
 ### Step 2
-then remove the migration you want to remove with this command
+then revert to the migration you want eith the following command
 
 ```
-dotnet ef migrations remove [migrationName]
-```
-### Step 3
-Then update the database with this command
-
-```
-dotnet ef database update
+dotnet ef database update [migrationName]
 ```
 
 ## CLI errors
